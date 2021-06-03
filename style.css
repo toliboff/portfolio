@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
 }
 
 a {
@@ -34,9 +35,10 @@ a {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  background-image: url("./img/header-mobile.svg");
+  background-image: url("./img/header-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
+  border-bottom-left-radius: 50px;
 }
 
 h1 {
@@ -78,4 +80,95 @@ h1 {
   color: #505f79;
   font-size: 25px;
   cursor: pointer;
+}
+
+.projects {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 100px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 15px;
+  padding: 16px;
+  margin-bottom: 15%;
+}
+
+.project-title {
+  font-weight: 700;
+  color: #172e4e;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+}
+
+.company {
+  font-weight: 600;
+  color:#344563;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.role-and-year {
+  color: #7a869a;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.role-and-year::before {
+  content:url("./img/Counter.png");
+  height: 8px;
+  width: 8px;
+  margin-right: 12px;
+}
+
+.description {
+  color: #344563;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 12px;
+}
+
+.languages {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language {
+  color: #6070ff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 4px 12px;
+  background-color: #ebebff;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.see-btn {
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #fff;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 20px 0;
+  align-self: flex-start;
 }
