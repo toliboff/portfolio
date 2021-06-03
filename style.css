@@ -61,12 +61,21 @@ h1 {
 .connect-me {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 7px;
 }
 
 .social-media {
+  list-style: none;
   display: flex;
   width: 55%;
   justify-content: space-between;
+  margin: 0;
   margin-bottom: 25%;
+  padding: 0;
+}
+
+.social-media a {
+  color: #505f79;
+  font-size: 25px;
+  cursor: pointer;
 }
