@@ -22,7 +22,7 @@ a {
   font-size: 18px;
   line-height: 20px;
   cursor: pointer;
- }
+}
 
 .menu {
   width: 24px;
@@ -36,14 +36,13 @@ a {
   padding: 24px;
   background-image: url("./img/header-mobile.svg");
   background-repeat: no-repeat;
-  background-position:top;
-  background-size:contain;
+  background-size: contain;
 }
 
 h1 {
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   margin: 0;
   margin-top: 25%;
   padding: 0;
