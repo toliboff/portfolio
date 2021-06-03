@@ -10,3 +10,24 @@ a {
   text-decoration: none;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  padding: 12px;
+
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+ }
+
+.menu {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
