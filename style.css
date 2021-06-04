@@ -38,7 +38,7 @@ a {
   padding-bottom: 25%;
   background-image: url("./img/header-mobile.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   border-bottom-left-radius: 50px;
 }
 
@@ -114,7 +114,7 @@ h1 {
 
 .company {
   font-weight: 600;
-  color:#344563;
+  color: #344563;
   font-size: 13px;
   line-height: 16px;
 }
@@ -128,7 +128,7 @@ h1 {
 }
 
 .role-and-year::before {
-  content:url("./img/Counter.png");
+  content: url("./img/Counter.png");
   height: 8px;
   width: 8px;
   margin-right: 12px;
@@ -192,14 +192,13 @@ h1 {
   padding: 12px;
 }
 
-.languages {
+.programming-languages {
   display: flex;
   flex-direction: column;
- 
 }
 
 .stack-title {
-  color:#000;
+  color: #000;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -216,16 +215,16 @@ h1 {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.language {
+.programming-language {
   list-style: none;
   background-color: #fff;
   padding: 0;
 }
 
-.language li{
+.programming-language li {
   display: flex;
   align-items: center;
-  background: #F7F7F9;
+  background: #f7f7f9;
   margin: 12px 0;
   padding: 9px;
   border-radius: 8px;
@@ -234,6 +233,6 @@ h1 {
   color: #253858;
 }
 
-.language img {
+.programming-language img {
   margin-right: 16px;
 }
