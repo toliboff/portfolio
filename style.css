@@ -35,6 +35,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 24px;
+  padding-bottom: 25%;
   background-image: url("./img/header-mobile.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -72,7 +73,6 @@ h1 {
   width: 55%;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 25%;
   padding: 0;
 }
 
@@ -87,7 +87,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .project {
@@ -171,4 +171,69 @@ h1 {
   padding: 12px;
   margin: 20px 0;
   align-self: flex-start;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background-color: #fff;
+  border-top-right-radius: 50px;
+}
+
+.about-me h1 {
+  align-self: flex-start;
+  width: 50%;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.stack-title {
+  color:#000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 23px 0;
+  margin: 0;
+}
+
+.opened {
+  background: url(./img/down-arrow.png) no-repeat right center;
+}
+
+.closed {
+  background: url(./img/right-arrow.png) no-repeat right center;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.language {
+  list-style: none;
+  background-color: #fff;
+  padding: 0;
+}
+
+.language li{
+  display: flex;
+  align-items: center;
+  background: #F7F7F9;
+  margin: 12px 0;
+  padding: 9px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.language img {
+  margin-right: 16px;
 }
