@@ -176,7 +176,7 @@ h1 {
 .btn:hover {
   background-color: #6070ff;
   color: #fff;
-  box-shadow: 0 8px 16px 0#b9bff8;
+  box-shadow: 0 8px 16px 0 #b9bff8;
 }
 
 .about-me {
