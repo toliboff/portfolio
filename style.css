@@ -2,12 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f8f8f8;
 }
 
 ul {
   list-style: none;
+  margin: unset;
+  padding: unset;
 }
 
 a {
@@ -176,7 +178,7 @@ h1 {
   font-weight: 500;
   line-height: 24px;
   background-color: #fff;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   border-radius: 10px;
   padding: 12px;
   margin: 20px 0;
@@ -186,7 +188,17 @@ h1 {
 .btn:hover {
   background-color: #6070ff;
   color: #fff;
-  box-shadow: 0 8px 16px 0 #b9bff8;
+}
+
+.btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.btn:disabled {
+  background-color: white;
+  border: 1px solid #6070ff;
+  color: #5e6c84;
 }
 
 .about-me {
@@ -253,22 +265,21 @@ h1 {
   margin-right: 16px;
 }
 
-/** Contact Section   */
+/** Contact Section */
 
 .contact-me {
   display: flex;
   flex-direction: column;
-  height: 779px;
-  width: 375px;
+  height: 735px;
   border-top-left-radius: 90px;
   background-color: #6070ff;
   position: relative;
+  padding: unset;
+  margin-top: 47px;
+  overflow: hidden;
 }
 
 .contact-me-text {
-  width: 327px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 103px;
   text-align: center;
   display: grid;
@@ -299,16 +310,13 @@ h1 {
 
 form {
   color: #b3bac5;
-  display: grid;
-  grid-template-rows: 48px 48px 170px;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-gap: 12px;
-  top: 50px;
+  display: flex;
   order: 2;
-  float: initial;
   margin: auto;
+  margin-top: unset;
+  margin-bottom: unset;
   width: 327px;
+  z-index: 3;
 }
 
 form:invalid>#submit {
@@ -331,6 +339,12 @@ form:invalid>#submit {
   color: #b3bac5;
 }
 
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
 .input {
   height: 48px;
   width: 327px;
@@ -343,7 +357,9 @@ form:invalid>#submit {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+  margin-bottom: 12px;
   padding-left: 16px;
+  box-sizing: border-box;
 }
 
 .input-message {
@@ -354,7 +370,6 @@ form:invalid>#submit {
   border-color: unset;
   border-image: unset;
   border-style: unset;
-  padding-left: 16px;
   padding-top: 15px;
   font-family: inherit;
   font-size: 15px;
@@ -362,12 +377,21 @@ form:invalid>#submit {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  padding-left: 16px;
+  box-sizing: border-box;
 }
 
 button {
   top: unset;
   position: relative;
   grid-row-start: 4;
+}
+
+.submit-btn:hover {
+  box-shadow: none;
+  color: #396df2;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .contact-me-action {
@@ -380,16 +404,72 @@ button {
   float: initial;
 }
 
-/*
-$white: #fff;
-$gray: #b3bac5;
-$gray-dark: #5e6c84;
-$gray-light: #c1c7d0;
-$blue-1: #172b4d;
-$blue-2: #344563;
-$blue-3: #c1c7d0;
-$blue-4: #6070ff;
-$blue-5: #386df2;
-$blue-6: #2230d2;
+/*  background images  */
 
-*/
+.e-12 {
+  height: 21px;
+  width: 21px;
+  left: 153px;
+  top: 55px;
+  position: absolute;
+  background-image: url("../img/Ellipse-12.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.e-3 {
+  height: 90px;
+  width: 70px;
+  left: 345px;
+  top: 55px;
+  position: absolute;
+  transform: rotate(-73deg);
+  background-image: url(../img/Ellipse-13.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.r-7 {
+  height: 82px;
+  width: 100px;
+  right: -40px;
+  top: 5px;
+  transform: rotate(115deg);
+  background-image: url("../img/Rectangle-7.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.r-7-b {
+  height: 60px;
+  width: 75px;
+  right: 50px;
+  top: 590px;
+  position: absolute;
+  -webkit-transform: rotate(115deg);
+  transform: rotate(0deg);
+}
+
+.e-5 {
+  height: 30px;
+  width: 30px;
+  left: 250px;
+  top: 615px;
+  position: absolute;
+  background-image: url("../img/Ellipse-5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.line-shape {
+  grid-row-start: 2;
+  margin: auto;
+  height: 5px;
+  width: 134px;
+  bottom: 8px;
+  position: relative;
+  background-image: url("../img/shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
