@@ -252,3 +252,144 @@ h1 {
 .programming-language img {
   margin-right: 16px;
 }
+
+/** Contact Section   */
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  height: 779px;
+  width: 375px;
+  border-top-left-radius: 90px;
+  background-color: #6070ff;
+  position: relative;
+}
+
+.contact-me-text {
+  width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 103px;
+  text-align: center;
+  display: grid;
+  order: 1;
+  float: initial;
+}
+
+.contact-title {
+  color: white;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  margin: auto;
+}
+
+.info {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+form {
+  color: #b3bac5;
+  display: grid;
+  grid-template-rows: 48px 48px 170px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-gap: 12px;
+  top: 50px;
+  order: 2;
+  float: initial;
+  margin: auto;
+  width: 327px;
+}
+
+form:invalid>#submit {
+  background-color: white;
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #b3bac5;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b3bac5;
+}
+
+::placeholder {
+  color: #b3bac5;
+}
+
+.input {
+  height: 48px;
+  width: 327px;
+  border-radius: 8px;
+  border-color: unset;
+  border-image: unset;
+  border-style: unset;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.input-message {
+  color: #172b4d;
+  height: 170px;
+  width: 327px;
+  border-radius: 8px;
+  border-color: unset;
+  border-image: unset;
+  border-style: unset;
+  padding-left: 16px;
+  padding-top: 15px;
+  font-family: inherit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+button {
+  top: unset;
+  position: relative;
+  grid-row-start: 4;
+}
+
+.contact-me-action {
+  display: grid;
+  grid-template-rows: auto 20px;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  padding-top: 22px;
+  order: 3;
+  float: initial;
+}
+
+/*
+$white: #fff;
+$gray: #b3bac5;
+$gray-dark: #5e6c84;
+$gray-light: #c1c7d0;
+$blue-1: #172b4d;
+$blue-2: #344563;
+$blue-3: #c1c7d0;
+$blue-4: #6070ff;
+$blue-5: #386df2;
+$blue-6: #2230d2;
+
+*/
