@@ -2,12 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f8f8f8;
 }
 
 ul {
   list-style: none;
+  margin: unset;
+  padding: unset;
 }
 
 a {
@@ -176,7 +178,7 @@ h1 {
   font-weight: 500;
   line-height: 24px;
   background-color: #fff;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   border-radius: 10px;
   padding: 12px;
   margin: 20px 0;
@@ -186,7 +188,17 @@ h1 {
 .btn:hover {
   background-color: #6070ff;
   color: #fff;
-  box-shadow: 0 8px 16px 0 #b9bff8;
+}
+
+.btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.btn:disabled {
+  background-color: white;
+  border: 1px solid #6070ff;
+  color: #5e6c84;
 }
 
 .about-me {
@@ -253,17 +265,18 @@ h1 {
   margin-right: 16px;
 }
 
-/** Contact Section   */
+/** Contact Section */
 
 .contact-me {
   display: flex;
   flex-direction: column;
-  height: 779px;
+  height: 735px;
   border-top-left-radius: 90px;
   background-color: #6070ff;
   position: relative;
-  padding: 24px;
+  padding: unset;
   margin-top: 47px;
+  overflow: hidden;
 }
 
 .contact-me-text {
@@ -300,6 +313,10 @@ form {
   display: flex;
   order: 2;
   margin: auto;
+  margin-top: unset;
+  margin-bottom: unset;
+  width: 327px;
+  z-index: 3;
 }
 
 form:invalid>#submit {
@@ -340,8 +357,9 @@ form:invalid>#submit {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  padding-left: 16px;
   margin-bottom: 12px;
+  padding-left: 16px;
+  box-sizing: border-box;
 }
 
 .input-message {
@@ -352,7 +370,6 @@ form:invalid>#submit {
   border-color: unset;
   border-image: unset;
   border-style: unset;
-  padding-left: 16px;
   padding-top: 15px;
   font-family: inherit;
   font-size: 15px;
@@ -360,6 +377,8 @@ form:invalid>#submit {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  padding-left: 16px;
+  box-sizing: border-box;
 }
 
 button {
@@ -385,77 +404,29 @@ button {
   float: initial;
 }
 
-.line-shape {
-  grid-row-start: 2;
-  margin: auto;
-  height: 5px;
-  width: 134px;
-  bottom: 8px;
-  position: relative;
-}
-
-.btn:active {
-  background-color: #2230d2;
-  color: #fff;
-}
-
-.btn:disabled {
-  background-color: #fff;
-  border: 1px solid #6070ff;
-  color: #5e6c84;
-}
-
 /*  background images  */
-
-.line-shape {
-  background-image: url("../img/shape.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.e-3 {
-  background-image: url("../img/Ellipse-3.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-}
-
-.e-12 {
-  background-image: url("../img/Ellipse-12.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-}
-
-.e-5 {
-  background-image: url("../img/Ellipse-5.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-}
-
-.r-7 {
-  background-image: url("../img/Rectangle-7.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-}
 
 .e-12 {
   height: 21px;
   width: 21px;
   left: 153px;
   top: 55px;
-  position: relative;
+  position: absolute;
+  background-image: url("../img/Ellipse-12.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .e-3 {
   height: 90px;
   width: 70px;
-  left: 525px;
+  left: 345px;
   top: 55px;
   position: absolute;
-  transform: rotate(12deg);
+  transform: rotate(-73deg);
+  background-image: url(../img/Ellipse-13.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .r-7 {
@@ -463,15 +434,10 @@ button {
   width: 100px;
   right: -40px;
   top: 5px;
-  position: absolute;
   transform: rotate(115deg);
-}
-
-.e-5 {
-  height: 30px;
-  width: 30px;
-  left: 445px;
-  top: 695px;
+  background-image: url("../img/Rectangle-7.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
 }
 
@@ -479,8 +445,31 @@ button {
   height: 60px;
   width: 75px;
   right: 50px;
-  top: 665px;
+  top: 590px;
   position: absolute;
   -webkit-transform: rotate(115deg);
   transform: rotate(0deg);
+}
+
+.e-5 {
+  height: 30px;
+  width: 30px;
+  left: 250px;
+  top: 615px;
+  position: absolute;
+  background-image: url("../img/Ellipse-5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.line-shape {
+  grid-row-start: 2;
+  margin: auto;
+  height: 5px;
+  width: 134px;
+  bottom: 8px;
+  position: relative;
+  background-image: url("../img/shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
