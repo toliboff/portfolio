@@ -319,7 +319,7 @@ form {
   z-index: 3;
 }
 
-form:invalid>#submit {
+form:invalid > #submit {
   background-color: white;
   border: 1px solid #c1c7d0;
   color: #5e6c84;
