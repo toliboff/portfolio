@@ -368,7 +368,7 @@ button {
   grid-row-start: 4;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
   box-shadow: none;
   color: #396df2;
   background-color: #fff;
@@ -383,4 +383,104 @@ button {
   padding-top: 22px;
   order: 3;
   float: initial;
+}
+
+.line-shape {
+  grid-row-start: 2;
+  margin: auto;
+  height: 5px;
+  width: 134px;
+  bottom: 8px;
+  position: relative;
+}
+
+.btn:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.btn:disabled {
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  color: #5e6c84;
+}
+
+/*  background images  */
+
+.line-shape {
+  background-image: url("../img/shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.e-3 {
+  background-image: url("../img/Ellipse-3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.e-12 {
+  background-image: url("../img/Ellipse-12.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.e-5 {
+  background-image: url("../img/Ellipse-5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.r-7 {
+  background-image: url("../img/Rectangle-7.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.e-12 {
+  height: 21px;
+  width: 21px;
+  left: 153px;
+  top: 55px;
+  position: relative;
+}
+
+.e-3 {
+  height: 90px;
+  width: 70px;
+  left: 525px;
+  top: 55px;
+  position: absolute;
+  transform: rotate(12deg);
+}
+
+.r-7 {
+  height: 82px;
+  width: 100px;
+  right: -40px;
+  top: 5px;
+  position: absolute;
+  transform: rotate(115deg);
+}
+
+.e-5 {
+  height: 30px;
+  width: 30px;
+  left: 445px;
+  top: 695px;
+  position: absolute;
+}
+
+.r-7-b {
+  height: 60px;
+  width: 75px;
+  right: 50px;
+  top: 665px;
+  position: absolute;
+  -webkit-transform: rotate(115deg);
+  transform: rotate(0deg);
 }
