@@ -31,10 +31,11 @@ a {
   cursor: pointer;
 }
 
-.menu {
+.mobile-menu {
   width: 24px;
   height: 24px;
   cursor: pointer;
+  color: #6070ff;
 }
 
 .headline {
