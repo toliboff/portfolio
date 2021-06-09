@@ -156,13 +156,6 @@ h1 {
   margin-right: 12px;
 }
 
-.description {
-  color: #344563;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
 .languages {
   list-style: none;
   padding: 0;
@@ -211,12 +204,18 @@ h1 {
   color: #5e6c84;
 }
 
+/* About Me */
 .about-me {
   display: flex;
   flex-direction: column;
   padding: 0 24px;
   background-color: #fff;
   border-top-right-radius: 50px;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-me h1 {
@@ -544,5 +543,52 @@ form:invalid > #submit {
 
   .project .btn {
     margin-top: 52px;
+  }
+
+  /* About Me */
+  .about-me {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 40% 60%;
+    padding: 142px;
+    border-top-right-radius: 7%;
+  }
+
+  .about-me h1 {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .connect-me {
+    margin: 0;
+  }
+
+  .about-me .btn {
+    margin: 0;
+  }
+
+  .about-me .social-media {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .programming-language {
+    display: flex;
+  }
+
+  .programming-language li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    margin: 6px;
+    font-size: 15px;
+    line-height: 20px;
+    width: 86px;
+  }
+
+  .programming-language img {
+    margin: auto;
+    margin-bottom: 15px;
   }
 }
