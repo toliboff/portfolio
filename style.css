@@ -302,7 +302,7 @@ h1 {
 }
 
 .info {
-  color: white;
+  color: #ebebff;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -313,7 +313,7 @@ h1 {
 
 form {
   color: #b3bac5;
-  z-index: 3;
+  /* z-index: 3; */
   padding: 0;
 }
 
@@ -476,6 +476,7 @@ form:invalid > #submit {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    margin-bottom: 0;
   }
 
   .project {
@@ -551,6 +552,7 @@ form:invalid > #submit {
     gap: 12px;
     grid-template-columns: 40% 60%;
     padding: 142px;
+    padding-bottom: 200px;
     border-top-right-radius: 7%;
   }
 
@@ -590,5 +592,37 @@ form:invalid > #submit {
   .programming-language img {
     margin: auto;
     margin-bottom: 15px;
+  }
+
+  /** Contact Section */
+  .contact-me {
+    border-top-left-radius: 110px;
+    margin-top: -47px;
+    background-image: url("./img/desktop-form-background.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+    padding: 79px 35%;
+  }
+
+  .info {
+    margin-bottom: 30px;
+  }
+
+  form {
+    margin: 0 10%;
+  }
+
+  .input,
+  .input-message {
+    border-radius: 0;
+  }
+
+  .submit-btn {
+    margin: 15px auto;
+  }
+
+  .btn:hover {
+    border: 1px solid #fff;
   }
 }
