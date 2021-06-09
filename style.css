@@ -118,6 +118,10 @@ h1 {
   margin-bottom: 15%;
 }
 
+.project img {
+  width: 100%;
+}
+
 .project-title {
   font-weight: 700;
   color: #172e4e;
@@ -188,6 +192,7 @@ h1 {
   padding: 12px;
   margin: 20px 0;
   align-self: flex-start;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -429,7 +434,7 @@ form:invalid > #submit {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 24px 300px;
+    padding: 24px 20%;
     padding-bottom: 25%;
     background-color: #fff;
     background-image: url("./img/Header-desktop.svg");
@@ -445,7 +450,6 @@ form:invalid > #submit {
     margin: 0;
     margin-top: 25%;
     padding: 0;
-    width: 38%;
   }
 
   .headline p {
@@ -465,5 +469,80 @@ form:invalid > #submit {
 
   .social-media .fab {
     margin-right: 20px;
+  }
+
+  /* Projects Section */
+  .projects {
+    padding: 142px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    grid-template-areas: "photo description";
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 15px;
+    padding: 24px;
+    margin-bottom: 142px;
+    box-shadow: 0 25px 32px 0 #dee1e4;
+  }
+
+  .project:nth-child(even) {
+    grid-template-areas: "description photo";
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    grid-area: photo;
+  }
+
+  .project-info {
+    grid-area: description;
+    padding: 24px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-title {
+    font-weight: 700;
+    color: #091e42;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .company {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .role-and-year {
+    color: #344563;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .description {
+    color: #344563;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 28px;
+    padding-right: 32px;
+    text-align: justify;
+  }
+
+  .project .btn {
+    margin-top: 52px;
   }
 }
