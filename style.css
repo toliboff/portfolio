@@ -519,6 +519,11 @@ form:invalid > #submit {
     border-radius: 15px;
   }
 
+  .programming-language img {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
   .project img:hover {
     transform: scale(1.01);
     transition: 0.2s;
@@ -613,11 +618,6 @@ form:invalid > #submit {
     font-size: 15px;
     line-height: 20px;
     width: 86px;
-  }
-
-  .programming-language img {
-    margin: auto;
-    margin-bottom: 15px;
   }
 
   /** Contact Section */
