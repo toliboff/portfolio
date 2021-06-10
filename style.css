@@ -29,6 +29,17 @@ a {
   font-size: 18px;
   line-height: 20px;
   cursor: pointer;
+  animation: rotate 0.2s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .mobile-menu {
