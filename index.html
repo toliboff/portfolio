@@ -21,12 +21,25 @@
       <a href="#" class="logo">My Logo</a>
 
       <nav>
-        <img src="./img/icons/menu.png" alt="menu" class="mobile-menu" />
+        <i class="fas fa-bars mobile-menu"></i>
+        <ul class="desktop-menu">
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
       </nav>
     </header>
 
     <section class="headline">
-      <h1>I’m Tolibjon Glad to see you!</h1>
+      <h1>I’m Tolibjon <br/>
+          Glad to see you!
+    </h1>
 
       <p>
         I’m a software developer! I can help you build a product , feature or
@@ -59,134 +72,148 @@
       </ul>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="portfolio">
       <ul class="project-list">
         <li class="project">
-          <img src="./img/project1.png" alt="" />
-          <h2 class="project-title">Tonic</h2>
+          <img src="./img/project0.png" alt="" />
+          <div class="project-info">
+                <h2 class="project-title">Tonic</h2>
 
-          <div class="stats">
-            <span class="company">CANOPY</span>
-            <span class="role-and-year">Back End Dev</span>
-            <span class="role-and-year">2015</span>
+                <div class="stats">
+                    <span class="company">CANOPY</span>
+                    <span class="role-and-year">Back End Dev</span>
+                    <span class="role-and-year">2015</span>
+                </div>
+
+                <p class="description">
+                    A daily selection of privately personalized reads; no accounts or
+                    sign-ups required.
+                </p>
+
+                <ul class="languages">
+                    <li class="language">html</li>
+                    <li class="language">css</li>
+                    <li class="language">javascript</li>
+                </ul>
+
+                <button class="btn" type="button">See Project</button>
           </div>
-
-          <p class="description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-
-          <ul class="languages">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javascript</li>
-          </ul>
-
-          <button class="btn" type="button">See Project</button>
-        </li>
-
-        <li class="project">
-          <img src="./img/project2.png" alt="" />
-          <h2 class="project-title">Multi-Post Stories</h2>
-          <div class="stats">
-            <span class="company">CANOPY</span>
-            <span class="role-and-year">Back End Dev</span>
-            <span class="role-and-year">2015</span>
-          </div>
-          <p class="description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-
-          <ul class="languages">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javascript</li>
-          </ul>
-
-          <button class="btn" type="button">See Project</button>
-        </li>
-
-        <li class="project">
-          <img src="./img/project3.png" alt="" />
-          <h2 class="project-title">Tonic</h2>
-          <div class="stats">
-            <span class="company">CANOPY</span>
-            <span class="role-and-year">Back End Dev</span>
-            <span class="role-and-year">2015</span>
-          </div>
-          <p class="description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-
-          <ul class="languages">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javascript</li>
-          </ul>
-
-          <button class="btn" type="button">See Project</button>
+          
         </li>
 
         <li class="project">
           <img src="./img/project4.png" alt="" />
-          <h2 class="project-title">Multi-Post Stories</h2>
-          <div class="stats">
-            <span class="company">CANOPY</span>
-            <span class="role-and-year">Back End Dev</span>
-            <span class="role-and-year">2015</span>
-          </div>
-          <p class="description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
+          <div class="project-info">
+                <h2 class="project-title">Multi-Post Stories</h2>
+                <div class="stats">
+                    <span class="company">FACEEBOOK</span>
+                    <span class="role-and-year">Full Stack Dev</span>
+                    <span class="role-and-year">2015</span>
+                </div>
+                <p class="description">
+                    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+                </p>
 
-          <ul class="languages">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javascript</li>
-          </ul>
+                <ul class="languages">
+                    <li class="language">html</li>
+                    <li class="language">Ruby on Rails</li>
+                    <li class="language">css</li>
+                    <li class="language">javascript</li>
+                </ul>
 
-          <button class="btn" type="button">See Project</button>
+                <button class="btn" type="button">See Project</button>
+        </div>
+        </li>
+
+        <li class="project">
+          <img src="./img/project1.png" alt="" />
+          <div class="project-info">
+                <h2 class="project-title">Facebook 360</h2>
+                <div class="stats">
+                    <span class="company">FACEEBOOK</span>
+                    <span class="role-and-year">Full Stack Dev</span>
+                    <span class="role-and-year">2015</span>
+                </div>
+                <p class="description">
+                    Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                </p>
+
+                <ul class="languages">
+                    <li class="language">html</li>
+                    <li class="language">Ruby on Rails</li>
+                    <li class="language">css</li>
+                    <li class="language">javascript</li>
+                </ul>
+
+                <button class="btn" type="button">See Project</button>
+            </div>
+        </li>
+
+        <li class="project">
+          <img src="./img/project2.png" alt="" />
+          <div class="project-info">
+                <h2 class="project-title">Uber Navigation</h2>
+                <div class="stats">
+                    <span class="company">Uber</span>
+                    <span class="role-and-year">Lead Developer</span>
+                    <span class="role-and-year">2018</span>
+                </div>
+                <p class="description">
+                    A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+                </p>
+
+                <ul class="languages">
+                    <li class="language">html</li>
+                    <li class="language">Ruby on Rails</li>
+                    <li class="language">css</li>
+                    <li class="language">javascript</li>
+                </ul>
+
+                <button class="btn" type="button">See Project</button>
+            </div>
         </li>
       </ul>
     </section>
 
-    <section class="about-me">
-      <h1>About Myself</h1>
-
-      <p>
-        Hello I'm a software developer! I can help you build a product , feature
-        or website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hesitate to contact me.
-      </p>
-      <h2 class="connect-me">LET'S CONNECT</h2>
-      <ul class="social-media">
-        <li>
-          <a href="https://twitter.com/tolib_tolibov"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/tolibjon-tolibov/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-medium"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/toliboff"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-angellist"></i></a>
-        </li>
-      </ul>
-
-      <a href="#" class="btn">Get my resume</a>
+    <section class="about-me" id="about">
+        <div class="me">
+            <h1>About <br/>
+                Myself
+            </h1>
+      
+            <p>
+              Hello I'm a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you like what
+              you see and have a project you need coded, don’t hesitate to contact me.
+            </p>
+            <h2 class="connect-me">LET'S CONNECT</h2>
+            <ul class="social-media">
+              <li>
+                <a href="https://twitter.com/tolib_tolibov"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/tolibjon-tolibov/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-medium"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/toliboff"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-angellist"></i></a>
+              </li>
+            </ul>
+      
+            <a href="#" class="btn">Get my resume</a>
+        </div>
+     
 
       <div class="tech-stack">
         <div class="programming-languages">
@@ -209,7 +236,7 @@
       </div>
     </section>
 
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
         <h2 class="contact-title">Contact me</h2>
         <p class="info">
           If you have an application you are interested in developing, a feature
