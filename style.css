@@ -160,6 +160,8 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .language {
@@ -171,7 +173,7 @@ h1 {
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 5px;
-  margin-right: 8px;
+  margin: 8px;
 }
 
 .btn {
@@ -433,7 +435,7 @@ form:invalid > #submit {
     justify-content: center;
     align-items: flex-start;
     padding: 24px 20%;
-    padding-bottom: 25%;
+    padding-bottom: 15%;
     background-color: #fff;
     background-image: url("./img/Header-desktop.svg");
     background-repeat: no-repeat;
@@ -472,6 +474,7 @@ form:invalid > #submit {
   /* Projects Section */
   .projects {
     padding: 142px;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -488,7 +491,11 @@ form:invalid > #submit {
     border-radius: 15px;
     padding: 24px;
     margin-bottom: 142px;
+  }
+
+  .project:hover {
     box-shadow: 0 25px 32px 0 #dee1e4;
+    cursor: pointer;
   }
 
   .project:nth-child(even) {
@@ -599,9 +606,13 @@ form:invalid > #submit {
     margin-top: -47px;
     background-image: url("./img/desktop-form-background.svg");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 90%;
     background-position: center center;
-    padding: 79px 35%;
+    padding: 79px 30%;
+  }
+
+  .contact-title {
+    margin-top: 65px;
   }
 
   .info {
@@ -617,8 +628,12 @@ form:invalid > #submit {
     border-radius: 0;
   }
 
+  .input-message {
+    height: 85px;
+  }
+
   .submit-btn {
-    margin: 15px auto;
+    margin: 22px auto;
   }
 
   .btn:hover {
