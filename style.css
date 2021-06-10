@@ -165,7 +165,6 @@ h1 {
 }
 
 .language {
-  float: left;
   color: #6070ff;
   font-size: 12px;
   line-height: 16px;
@@ -399,7 +398,248 @@ form:invalid > #submit {
 
 /* Desktop version */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* Header Section */
+  .header {
+    padding: 25px 142px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+  }
+
+  .desktop-menu a {
+    color: #344563;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-right: 32px;
+  }
+
+  .desktop-menu li:last-child a {
+    margin-right: 0;
+  }
+
+  /* Headline Section */
+  .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 20%;
+    padding-bottom: 15%;
+    background-color: #fff;
+    background-image: url("./img/Header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-bottom-left-radius: 7%;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 45px;
+    color: #091e42;
+    margin: 0;
+    margin-top: 25%;
+    padding: 0;
+  }
+
+  .headline p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .social-media {
+    list-style: none;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media .fab {
+    margin-right: 20px;
+  }
+
+  /* Projects Section */
+  .projects {
+    padding: 122px;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 0;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    grid-template-areas: "photo description";
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 15px;
+    padding: 24px;
+    margin-bottom: 112px;
+  }
+
+  .project:hover {
+    box-shadow: 0 25px 32px 0 #dee1e4;
+    cursor: pointer;
+  }
+
+  .project:nth-child(even) {
+    grid-template-areas: "description photo";
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    grid-area: photo;
+  }
+
+  .project-info {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-title {
+    font-weight: 700;
+    color: #091e42;
+    font-size: 30px;
+    line-height: 52px;
+    margin: 0;
+  }
+
+  .company {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .role-and-year {
+    color: #344563;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    color: #344563;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+
+  .language {
+    padding: 4px 6px;
+    background-color: #ebebff;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .project .btn {
+    margin-top: 16px;
+  }
+
+  /* About Me */
+  .about-me {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 45% 55%;
+    padding: 142px;
+    padding-bottom: 200px;
+    border-top-right-radius: 7%;
+  }
+
+  .about-me h1 {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .connect-me {
+    margin: 0;
+  }
+
+  .about-me .btn {
+    margin: 0;
+  }
+
+  .about-me .social-media {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .programming-language {
+    display: flex;
+  }
+
+  .programming-language li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    margin: 6px;
+    font-size: 15px;
+    line-height: 20px;
+    width: 86px;
+  }
+
+  .programming-language img {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  /** Contact Section */
+  .contact-me {
+    border-top-left-radius: 110px;
+    margin-top: -47px;
+    background-image: url("./img/desktop-form-background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    padding: 79px 25%;
+  }
+
+  .contact-title {
+    margin-top: 65px;
+  }
+
+  .info {
+    margin-bottom: 30px;
+  }
+
+  form {
+    margin: 0 10%;
+  }
+
+  .input,
+  .input-message {
+    border-radius: 0;
+  }
+
+  .input-message {
+    height: 85px;
+  }
+
+  .submit-btn {
+    margin: 22px auto;
+  }
+}
+
+@media (min-width: 1440px) {
   /* Header Section */
   .header {
     padding: 25px 142px;
@@ -549,7 +789,7 @@ form:invalid > #submit {
   }
 
   .project .btn {
-    margin-top: 52px;
+    margin-top: 32px;
   }
 
   /* About Me */
