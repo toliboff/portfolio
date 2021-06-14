@@ -1,4 +1,4 @@
-![](/img.screenshot.png)
+![](./img/DesktopAndMobile.png)
 
 # Personal portfolio
 
@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://toliboff.github.io/portfolio/)
 
 ## Getting Started
 

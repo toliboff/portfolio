@@ -29,6 +29,17 @@ a {
   font-size: 18px;
   line-height: 20px;
   cursor: pointer;
+  animation: rotate 0.2s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .mobile-menu {
@@ -505,6 +516,18 @@ form:invalid > #submit {
     width: 100%;
     height: auto;
     grid-area: photo;
+    border-radius: 15px;
+  }
+
+  .programming-language img {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .project img:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+    box-shadow: 0 15px 20px 0 #a1a2a3;
   }
 
   .project-info {
@@ -597,11 +620,6 @@ form:invalid > #submit {
     width: 86px;
   }
 
-  .programming-language img {
-    margin: auto;
-    margin-bottom: 15px;
-  }
-
   /** Contact Section */
   .contact-me {
     border-top-left-radius: 110px;
@@ -628,6 +646,13 @@ form:invalid > #submit {
   .input,
   .input-message {
     border-radius: 0;
+  }
+
+  input:hover::placeholder,
+  textarea:hover::placeholder {
+    color: #b3bac5;
+    transform: translateX(20px);
+    transition: 0.3s;
   }
 
   .input-message {
@@ -746,6 +771,18 @@ form:invalid > #submit {
     width: 100%;
     height: auto;
     grid-area: photo;
+    border-radius: 15px;
+  }
+
+  .programming-language img {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .project img:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+    box-shadow: 0 15px 20px 0 #a1a2a3;
   }
 
   .project-info {
@@ -835,11 +872,6 @@ form:invalid > #submit {
     width: 86px;
   }
 
-  .programming-language img {
-    margin: auto;
-    margin-bottom: 15px;
-  }
-
   /** Contact Section */
   .contact-me {
     border-top-left-radius: 110px;
@@ -870,6 +902,13 @@ form:invalid > #submit {
 
   .input-message {
     height: 85px;
+  }
+
+  input:hover::placeholder,
+  textarea:hover::placeholder {
+    color: #b3bac5;
+    transform: translateX(20px);
+    transition: 0.3s;
   }
 
   .submit-btn {
