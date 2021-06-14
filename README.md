@@ -1,4 +1,4 @@
-![](/img.screenshot.png)
+![](./img/DesktopAndMobile.png)
 
 # Personal portfolio
 
