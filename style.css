@@ -374,6 +374,10 @@ form:invalid > #submit {
   box-sizing: border-box;
 }
 
+.input:focus {
+  outline: 5px solid rgba(15, 15, 200, 0.3);
+}
+
 .input-message {
   color: #172b4d;
   height: 170px;
@@ -386,6 +390,10 @@ form:invalid > #submit {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+}
+
+.input-message:focus {
+  outline: 5px solid rgba(15, 15, 200, 0.3);
 }
 
 .submit-btn {
