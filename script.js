@@ -1,36 +1,38 @@
-let body = document.getElementById("body");
-let menu = document.createElement("div");
-menu.className = "menu-style";
-body.appendChild(menu);
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'mobileMenu';
+document.body.appendChild(mobileMenu);
 
-let icon = document.createElement("i");
-icon.className = "fas fa-times";
-menu.appendChild(icon);
+const closeIcon = document.createElement('i');
+closeIcon.className = 'fas fa-times';
+mobileMenu.appendChild(closeIcon);
 
-let menuList = document.createElement("ul");
-menuList.className = "menu-list";
-menu.appendChild(menuList);
+const menuItems = document.createElement('ul');
+menuItems.className = 'menuItems';
+menuItems.innerHTML = `<li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#contact">Contact</a></li>`;
+mobileMenu.appendChild(menuItems);
+const blurred = document.querySelectorAll('.filter');
+document.getElementById('mobile-menu').addEventListener('click', () => {
+  mobileMenu.style.display = 'flex';
+  blurred.forEach((section) => {
+    section.style.filter = 'blur(5px)';
+  });
+});
 
-let portfolio = document.createElement("li");
-portfolio.className = "portfolio";
-let portfolioLink = document.createElement("a");
-portfolioLink.textContent = "Portfolio";
-portfolioLink.href = "#portfolio";
-portfolio.appendChild(portfolioLink);
-menuList.appendChild(portfolio);
+closeIcon.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+  blurred.forEach((section) => {
+    section.style.filter = 'blur(0px)';
+  });
+});
 
-let about = document.createElement("li");
-about.className = "about";
-let aboutLink = document.createElement("a");
-aboutLink.textContent = "About";
-aboutLink.href = "#about";
-about.appendChild(aboutLink);
-menuList.appendChild(about);
-
-let contact = document.createElement("li");
-contact.className = "contatc-content";
-let contactLink = document.createElement("a");
-contactLink.textContent = "Contact";
-contactLink.href = "#contact";
-contact.appendChild(contactLink);
-menuList.appendChild(contact);
+const menuLinks = menuItems.querySelectorAll('a');
+menuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+    blurred.forEach((section) => {
+      section.style.filter = 'blur(0px)';
+    });
+  });
+});
