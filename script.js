@@ -1,11 +1,9 @@
 const mobileMenu = document.createElement('div');
 mobileMenu.className = 'mobileMenu';
 document.body.appendChild(mobileMenu);
-
 const closeIcon = document.createElement('i');
 closeIcon.className = 'fas fa-times';
 mobileMenu.appendChild(closeIcon);
-
 const menuItems = document.createElement('ul');
 menuItems.className = 'menuItems';
 menuItems.innerHTML = `<li><a href="#portfolio">Portfolio</a></li>
