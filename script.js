@@ -1,3 +1,4 @@
+// --------MOBILE MENU --------------
 const mobileMenu = document.createElement('div');
 mobileMenu.className = 'mobileMenu';
 document.body.appendChild(mobileMenu);
