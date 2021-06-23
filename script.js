@@ -117,9 +117,7 @@ function showDetails(projectIndex) {
       <span class="role-and-year">${projects[projectIndex].position}</span>
       <span class="role-and-year">${projects[projectIndex].year}</span>
   </div>
-  <img src="${projects[projectIndex].image.link}" alt="${
-  projects[projectIndex].image.alt
-}" />
+  <img src="${projects[projectIndex].image.link}" alt="${projects[projectIndex].image.alt}" />
   <div class="project-info">
   <p class="description">
     ${projects[projectIndex].description}
@@ -134,12 +132,8 @@ function showDetails(projectIndex) {
   }())}
       </ul>
       <div class="buttons">
-        <a href="${
-  projects[projectIndex].liveSource
-}" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
-        <a href="${
-  projects[projectIndex].sourceCode
-}" class="btn">See Live <i class="fab fa-github"></i></a>
+        <a href="${projects[projectIndex].liveSource}" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
+        <a href="${projects[projectIndex].sourceCode}" class="btn">See Live <i class="fab fa-github"></i></a>
       </div>
 
     </div>
@@ -179,14 +173,11 @@ const projectsCode = projects.map(
     <ul class="languages">
     ${(function usedTech() {
     return project.technologies
-      .map((tech) => `<li class="language">${tech}</li>`)
-      .join('');
+      .map((tech) => `<li class="language">${tech}</li>`).join('');
   }())}
 
     </ul>
-    <button class="btn details-btn" type="button" data-id="${
-  project.id
-}">See Project</button>
+    <button class="btn details-btn" type="button" data-id="${project.id}">See Project</button>
   </div>
 </li>`,
 );
