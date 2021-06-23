@@ -193,11 +193,11 @@ showButton.forEach((btn) => {
 // ------------ Form Validation ---------------------------
 
 const form = document.getElementById('contact-form');
-const emailInput = document.getElementById('email-address');
-const errorMessage = document.getElementById('error-message');
+const email = document.getElementById('email-address');
+const message = document.getElementById('error-message');
 form.addEventListener('submit', (e) => {
-  if (emailInput.value.toLowerCase() !== emailInput.value) {
+  if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
-    errorMessage.textContent = 'Please, use only lowercase letters for your e-mail!';
+    message.textContent = 'Please, use only lowercase letters for your e-mail!';
   }
 });
