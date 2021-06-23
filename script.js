@@ -189,3 +189,8 @@ showButton.forEach((btn) => {
     });
   });
 });
+
+// ------------ Form Validation ---------------------------
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email-address');
+const errorMessage = document.getElementById('error-message');
