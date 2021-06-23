@@ -208,9 +208,10 @@ const emailInput = document.getElementById("email-address");
 const errorMessage = document.getElementById("error-message");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault;
+  
   if (emailInput.value.toLowerCase() !== emailInput.value) {
+    e.preventDefault();
     errorMessage.textContent =
-      "Please, use only lowercase ltter for your email!";
+      "Please, use only lowercase letter for your email!";
   }
 });
