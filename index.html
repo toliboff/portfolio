@@ -84,110 +84,7 @@
     </section>
 
     <section class="projects filter" id="portfolio">
-      <ul class="project-list">
-        <li class="project">
-          <img src="./img/project0.png" alt="Tonic screenshot" />
-          <div class="project-info">
-            <h2 class="project-title">Tonic</h2>
-
-            <div class="stats">
-              <span class="company">CANOPY</span>
-              <span class="role-and-year">Back End Dev</span>
-              <span class="role-and-year">2015</span>
-            </div>
-
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-
-            <ul class="languages">
-              <li class="language">html</li>
-              <li class="language">css</li>
-              <li class="language">javascript</li>
-            </ul>
-
-            <button class="btn" type="button">See Project</button>
-          </div>
-        </li>
-
-        <li class="project">
-          <img src="./img/project4.png" alt="Multi-Post Stories screenshot" />
-          <div class="project-info">
-            <h2 class="project-title">Multi-Post Stories</h2>
-            <div class="stats">
-              <span class="company">FACEEBOOK</span>
-              <span class="role-and-year">Full Stack Dev</span>
-              <span class="role-and-year">2015</span>
-            </div>
-            <p class="description">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-
-            <ul class="languages">
-              <li class="language">html</li>
-              <li class="language">Ruby on Rails</li>
-              <li class="language">css</li>
-              <li class="language">javascript</li>
-            </ul>
-
-            <button class="btn" type="button">See Project</button>
-          </div>
-        </li>
-
-        <li class="project">
-          <img src="./img/project1.png" alt="Facebook 360 screenshot" />
-          <div class="project-info">
-            <h2 class="project-title">Facebook 360</h2>
-            <div class="stats">
-              <span class="company">FACEEBOOK</span>
-              <span class="role-and-year">Full Stack Dev</span>
-              <span class="role-and-year">2015</span>
-            </div>
-            <p class="description">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-
-            <ul class="languages">
-              <li class="language">html</li>
-              <li class="language">Ruby on Rails</li>
-              <li class="language">css</li>
-              <li class="language">javascript</li>
-            </ul>
-
-            <button class="btn" type="button">See Project</button>
-          </div>
-        </li>
-
-        <li class="project">
-          <img src="./img/project2.png" alt="Uber Navigation screenshot" />
-          <div class="project-info">
-            <h2 class="project-title">Uber Navigation</h2>
-            <div class="stats">
-              <span class="company">Uber</span>
-              <span class="role-and-year">Lead Developer</span>
-              <span class="role-and-year">2018</span>
-            </div>
-            <p class="description">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-
-            <ul class="languages">
-              <li class="language">html</li>
-              <li class="language">Ruby on Rails</li>
-              <li class="language">css</li>
-              <li class="language">javascript</li>
-            </ul>
-
-            <button class="btn" type="button">See Project</button>
-          </div>
-        </li>
-      </ul>
+      <h2> &nbsp;</h2>
     </section>
 
     <section class="about-me filter" id="about">
@@ -260,7 +157,7 @@
         with it
       </p>
 
-      <form action="https://formspree.io/f/mdoygqrl" method="post">
+      <form action="https://formspree.io/f/mdoygqrl" method="post" id="contact-form">
         <ul class="form-elements">
           <li>
             <input
@@ -294,6 +191,7 @@
             ></textarea>
           </li>
           <li>
+            <span id="error-message"></span>
             <button
               type="submit"
               id="submit"

@@ -250,6 +250,66 @@ h1 {
   color: #5e6c84;
 }
 
+/* Project Details */
+.project-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c1c7d08c;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.details-container {
+  background-color: #fff;
+  margin: 30px 16px;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.closeDetails {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  color: #67798e;
+  cursor: pointer;
+}
+
+.details-container .project-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.details-container img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.tech-and-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.details-container .btn {
+  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 5px;
+}
+
 /* About Me */
 .about-me {
   display: flex;
@@ -696,9 +756,41 @@ form:invalid > #submit {
   .submit-btn {
     margin: 22px auto;
   }
+
+  /* Details modal */
+  .details-container {
+    background-color: #fff;
+    margin: 60px 200px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .details-container .project-title {
+    margin: 0;
+  }
+
+  .tech-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .buttons .btn {
+    font-size: 12px;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   /* Header Section */
   .header {
     padding: 25px 142px;
@@ -953,5 +1045,45 @@ form:invalid > #submit {
     border: 1px solid #fff;
     background-color: #6070ff;
     color: #fff;
+  }
+
+  /* Details modal */
+  .details-container {
+    background-color: #fff;
+    margin: 60px 200px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .details-container .project-title {
+    margin: 0;
+  }
+
+  .details-container .project-info {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding-right: 0;
+  }
+
+  .tech-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .details-container .btn {
+    padding: 7px;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 5px;
   }
 }
