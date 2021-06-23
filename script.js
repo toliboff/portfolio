@@ -126,7 +126,7 @@ function showDetails(projectIndex) {
     <div class="tech-and-buttons">
       <ul class="languages">
       ${(function usedTech() {
-    return projects[projectIndex].technologies.map((tech) => `<li class="language">${tech}</li>`);
+    return projects[projectIndex].technologies.map((tech) => `<li class="language">${tech}</li>`).join('');
   }())}
       </ul>
       <div class="buttons">
@@ -142,6 +142,9 @@ function showDetails(projectIndex) {
   document.getElementById('closeDetails').addEventListener('click', () => {
     modalDetails.innerHTML = '';
     document.body.removeChild(modalDetails);
+    blurred.forEach((section) => {
+      section.style.filter = 'blur(0)';
+    });
   });
 }
 
@@ -167,7 +170,7 @@ const projectsCode = projects.map(
 
     <ul class="languages">
     ${(function usedTech() {
-    return project.technologies.map((tech) => `<li class="language">${tech}</li>`);
+    return project.technologies.map((tech) => `<li class="language">${tech}</li>`).join('');
   }())}
 
     </ul>
@@ -175,11 +178,14 @@ const projectsCode = projects.map(
   </div>
 </li>`,
 );
-projectList.innerHTML = projectsCode;
+projectList.innerHTML = projectsCode.join('');
 
 const showButton = document.querySelectorAll('.details-btn');
 showButton.forEach((btn) => {
   btn.addEventListener('click', (event) => {
     showDetails(event.target.dataset.id);
+    blurred.forEach((section) => {
+      section.style.filter = 'blur(5px)';
+    });
   });
 });
