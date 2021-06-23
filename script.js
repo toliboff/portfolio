@@ -126,9 +126,7 @@ function showDetails(projectIndex) {
     <div class="tech-and-buttons">
       <ul class="languages">
       ${(function usedTech() {
-    return projects[projectIndex].technologies
-      .map((tech) => `<li class="language">${tech}</li>`)
-      .join('');
+    return projects[projectIndex].technologies.map((tech) => `<li class="language">${tech}</li>`).join('');
   }())}
       </ul>
       <div class="buttons">
@@ -172,8 +170,7 @@ const projectsCode = projects.map(
 
     <ul class="languages">
     ${(function usedTech() {
-    return project.technologies
-      .map((tech) => `<li class="language">${tech}</li>`).join('');
+    return project.technologies.map((tech) => `<li class="language">${tech}</li>`).join('');
   }())}
 
     </ul>
@@ -197,7 +194,6 @@ showButton.forEach((btn) => {
 const form = document.getElementById('contact-form');
 const emailInput = document.getElementById('email-address');
 const errorMessage = document.getElementById('error-message');
-
 form.addEventListener('submit', (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
