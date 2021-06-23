@@ -250,6 +250,8 @@ h1 {
   color: #5e6c84;
 }
 
+/* Project Details */
+
 /* About Me */
 .about-me {
   display: flex;
@@ -698,7 +700,7 @@ form:invalid > #submit {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
   /* Header Section */
   .header {
     padding: 25px 142px;
@@ -954,4 +956,6 @@ form:invalid > #submit {
     background-color: #6070ff;
     color: #fff;
   }
+
+  /* Details modal */
 }
