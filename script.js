@@ -191,7 +191,6 @@ showButton.forEach((btn) => {
 });
 
 // ------------ Form Validation ---------------------------
-
 const form = document.getElementById('contact-form');
 const email = document.getElementById('email-address');
 const message = document.getElementById('error-message');
