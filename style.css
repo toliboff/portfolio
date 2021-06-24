@@ -501,6 +501,11 @@ form:invalid > #submit {
   color: #0d151e;
 }
 
+.error-message {
+  margin: 10px;
+  color: rgb(248, 200, 200);
+}
+
 /* Desktop version */
 
 @media (min-width: 1024px) and (max-width: 1439px) {
