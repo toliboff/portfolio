@@ -189,3 +189,14 @@ showButton.forEach((btn) => {
     });
   });
 });
+
+// ------------ Form Validation ---------------------------
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email-address');
+const errorMessage = document.getElementById('error-message');
+form.addEventListener('submit', (e) => {
+  if (emailInput.value.toLowerCase() !== emailInput.value) {
+    e.preventDefault();
+    errorMessage.textContent = 'Please, use only lowercase letters for your e-mail!';
+  }
+});
