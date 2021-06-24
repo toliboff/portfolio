@@ -170,11 +170,15 @@ const projectsCode = projects.map(
 
     <ul class="languages">
     ${(function usedTech() {
-    return project.technologies.map((tech) => `<li class="language">${tech}</li>`).join('');
+    return project.technologies
+      .map((tech) => `<li class="language">${tech}</li>`)
+      .join('');
   }())}
 
     </ul>
-    <button class="btn details-btn" type="button" data-id="${project.id}">See Project</button>
+    <button class="btn details-btn" type="button" data-id="${
+  project.id
+}">See Project</button>
   </div>
 </li>`,
 );
