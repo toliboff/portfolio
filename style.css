@@ -482,8 +482,15 @@ form:invalid > #submit {
   text-align: left;
 }
 
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .submit-btn {
   margin-bottom: 36px;
+  margin-left: 5px;
 }
 
 .submit-btn:hover {
@@ -759,7 +766,8 @@ form:invalid > #submit {
   }
 
   .submit-btn {
-    margin: 22px auto;
+    margin: 20px 0;
+    margin-left: 5px;
   }
 
   /* Details modal */
@@ -1043,7 +1051,8 @@ form:invalid > #submit {
   }
 
   .submit-btn {
-    margin: 22px auto;
+    margin: 20px 0;
+    margin-left: 5px;
   }
 
   .btn:hover {
