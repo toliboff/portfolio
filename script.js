@@ -117,7 +117,9 @@ function showDetails(projectIndex) {
       <span class="role-and-year">${projects[projectIndex].position}</span>
       <span class="role-and-year">${projects[projectIndex].year}</span>
   </div>
-  <img src="${projects[projectIndex].image.link}" alt="${projects[projectIndex].image.alt}" />
+  <img src="${projects[projectIndex].image.link}" alt="${
+  projects[projectIndex].image.alt
+}" />
   <div class="project-info">
   <p class="description">
     ${projects[projectIndex].description}
@@ -126,12 +128,18 @@ function showDetails(projectIndex) {
     <div class="tech-and-buttons">
       <ul class="languages">
       ${(function usedTech() {
-    return projects[projectIndex].technologies.map((tech) => `<li class="language">${tech}</li>`).join('');
+    return projects[projectIndex].technologies
+      .map((tech) => `<li class="language">${tech}</li>`)
+      .join('');
   }())}
       </ul>
       <div class="buttons">
-        <a href="${projects[projectIndex].liveSource}" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
-        <a href="${projects[projectIndex].sourceCode}" class="btn">See Live <i class="fab fa-github"></i></a>
+        <a href="${
+  projects[projectIndex].liveSource
+}" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
+        <a href="${
+  projects[projectIndex].sourceCode
+}" class="btn">See Live <i class="fab fa-github"></i></a>
       </div>
 
     </div>
@@ -195,12 +203,57 @@ showButton.forEach((btn) => {
 });
 
 // ------------ Form Validation ---------------------------
+const userData = JSON.stringify({
+  name: '',
+  email: '',
+  message: '',
+});
+
 const form = document.getElementById('contact-form');
+const usernameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email-address');
+const messageText = document.getElementById('message');
 const errorMessage = document.getElementById('error-message');
+const resetBtn = document.getElementById('reset');
+
 form.addEventListener('submit', (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
     errorMessage.textContent = 'Please, use only lowercase letters for your e-mail!';
+  } else {
+    localStorage.setItem('userInfo', userData);
   }
+});
+
+// -------------- Local Storage ---------------------------
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('userInfo')) {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    usernameInput.value = userInfo.name;
+    emailInput.value = userInfo.email;
+    messageText.value = userInfo.message;
+  } else {
+    localStorage.setItem('userInfo', userData);
+  }
+});
+
+function saveData(key, value) {
+  if (localStorage.getItem('userInfo')) {
+    const oldData = JSON.parse(localStorage.getItem('userInfo'));
+    const newData = { ...oldData, [key]: value };
+    localStorage.setItem('userInfo', JSON.stringify(newData));
+  } else {
+    localStorage.setItem('userInfo', userData);
+  }
+}
+
+form.addEventListener('input', (evt) => {
+  if (evt.target.dataset.id === 'name' || evt.target.dataset.id === 'email' || evt.target.dataset.id === 'message') {
+    saveData(evt.target.dataset.id, evt.target.value);
+  }
+});
+
+resetBtn.addEventListener('click', () => {
+  localStorage.setItem('userInfo', userData);
 });

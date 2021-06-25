@@ -164,6 +164,7 @@
               type="text"
               class="input"
               name="name"
+              data-id="name"
               id="full-name"
               maxlength="30"
               placeholder="Write your name here"
@@ -176,6 +177,7 @@
               class="input"
               name="_replyto"
               id="email-address"
+              data-id="email"
               placeholder="Write your email here"
               required
             />
@@ -184,6 +186,7 @@
             <textarea
               class="input-message"
               name="message"
+              data-id="message"
               id="message"
               maxlength="500"
               placeholder="Write your message here"
@@ -192,7 +195,17 @@
           </li>
           <li>
             <span id="error-message" class="error-message"></span>
-            <button
+            <div class="form-buttons">
+              <button
+              type="reset"
+              id="reset"
+              class="btn"
+              aria-disabled="true"
+            >
+              Reset Form
+            </button>
+
+              <button
               type="submit"
               id="submit"
               class="btn submit-btn"
@@ -201,6 +214,9 @@
             >
               Get In Touch
             </button>
+             
+            </div>
+            
           </li>
         </ul>
       </form>
