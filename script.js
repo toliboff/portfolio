@@ -1,37 +1,37 @@
 // --------MOBILE MENU --------------
-const mobileMenu = document.createElement("div");
-mobileMenu.className = "mobileMenu";
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'mobileMenu';
 document.body.appendChild(mobileMenu);
-const closeIcon = document.createElement("i");
-closeIcon.className = "fas fa-times";
+const closeIcon = document.createElement('i');
+closeIcon.className = 'fas fa-times';
 mobileMenu.appendChild(closeIcon);
-const menuItems = document.createElement("ul");
-menuItems.className = "menuItems";
+const menuItems = document.createElement('ul');
+menuItems.className = 'menuItems';
 menuItems.innerHTML = `<li><a href="#portfolio">Portfolio</a></li>
                       <li><a href="#about">About</a></li>
                       <li><a href="#contact">Contact</a></li>`;
 mobileMenu.appendChild(menuItems);
-const blurred = document.querySelectorAll(".filter");
-document.getElementById("mobile-menu").addEventListener("click", () => {
-  mobileMenu.style.display = "flex";
+const blurred = document.querySelectorAll('.filter');
+document.getElementById('mobile-menu').addEventListener('click', () => {
+  mobileMenu.style.display = 'flex';
   blurred.forEach((section) => {
-    section.style.filter = "blur(5px)";
+    section.style.filter = 'blur(5px)';
   });
 });
 
-closeIcon.addEventListener("click", () => {
-  mobileMenu.style.display = "none";
+closeIcon.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
   blurred.forEach((section) => {
-    section.style.filter = "blur(0px)";
+    section.style.filter = 'blur(0px)';
   });
 });
 
-const menuLinks = menuItems.querySelectorAll("a");
+const menuLinks = menuItems.querySelectorAll('a');
 menuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileMenu.style.display = "none";
+  link.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
     blurred.forEach((section) => {
-      section.style.filter = "blur(0px)";
+      section.style.filter = 'blur(0px)';
     });
   });
 });
@@ -40,72 +40,72 @@ menuLinks.forEach((link) => {
 const projects = [
   {
     id: 0,
-    name: "Tonic",
-    companyName: "CANOPY",
-    position: "Back End Dev",
+    name: 'Tonic',
+    companyName: 'CANOPY',
+    position: 'Back End Dev',
     year: 2015,
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    technologies: ["html", "css", "javascript"],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['html', 'css', 'javascript'],
     image: {
-      link: "./img/project0.png",
-      alt: "Tonic screenshot",
+      link: './img/project0.png',
+      alt: 'Tonic screenshot',
     },
-    liveSource: "#",
-    sourceCode: "#",
+    liveSource: '#',
+    sourceCode: '#',
   },
   {
     id: 1,
-    name: "Multi-Post Stories",
-    companyName: "FACEEBOOK",
-    position: "Full Stack Dev",
+    name: 'Multi-Post Stories',
+    companyName: 'FACEEBOOK',
+    position: 'Full Stack Dev',
     year: 2015,
     description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    technologies: ["html", "Ruby on Rails", "css", "javascript"],
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
     image: {
-      link: "./img/project4.png",
-      alt: "Multi-Post Stories screenshot",
+      link: './img/project4.png',
+      alt: 'Multi-Post Stories screenshot',
     },
-    liveSource: "#",
-    sourceCode: "#",
+    liveSource: '#',
+    sourceCode: '#',
   },
   {
     id: 2,
-    name: "Facebook 360",
-    companyName: "FACEEBOOK",
-    position: "Full Stack Dev",
+    name: 'Facebook 360',
+    companyName: 'FACEEBOOK',
+    position: 'Full Stack Dev',
     year: 2015,
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    technologies: ["html", "css", "javascript"],
+    technologies: ['html', 'css', 'javascript'],
     image: {
-      link: "./img/project1.png",
-      alt: "Facebook 360screenshot",
+      link: './img/project1.png',
+      alt: 'Facebook 360screenshot',
     },
-    liveSource: "#",
-    sourceCode: "#",
+    liveSource: '#',
+    sourceCode: '#',
   },
   {
     id: 3,
-    name: "Uber Navigation",
-    companyName: "Uber",
-    position: "Lead Developer",
+    name: 'Uber Navigation',
+    companyName: 'Uber',
+    position: 'Lead Developer',
     year: 2018,
     description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    technologies: ["html", "Ruby on Rails", "css", "javascript"],
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    technologies: ['html', 'Ruby on Rails', 'css', 'javascript'],
     image: {
-      link: "./img/project2.png",
-      alt: "Uber Navigation screenshot",
+      link: './img/project2.png',
+      alt: 'Uber Navigation screenshot',
     },
-    liveSource: "#",
-    sourceCode: "#",
+    liveSource: '#',
+    sourceCode: '#',
   },
 ];
-const modalDetails = document.createElement("div");
-modalDetails.id = "modal-details";
-modalDetails.className = "project-details";
+const modalDetails = document.createElement('div');
+modalDetails.id = 'modal-details';
+modalDetails.className = 'project-details';
 
 function showDetails(projectIndex) {
   const projectsCode = `
@@ -118,8 +118,8 @@ function showDetails(projectIndex) {
       <span class="role-and-year">${projects[projectIndex].year}</span>
   </div>
   <img src="${projects[projectIndex].image.link}" alt="${
-    projects[projectIndex].image.alt
-  }" />
+  projects[projectIndex].image.alt
+}" />
   <div class="project-info">
   <p class="description">
     ${projects[projectIndex].description}
@@ -128,18 +128,18 @@ function showDetails(projectIndex) {
     <div class="tech-and-buttons">
       <ul class="languages">
       ${(function usedTech() {
-        return projects[projectIndex].technologies
-          .map((tech) => `<li class="language">${tech}</li>`)
-          .join("");
-      })()}
+    return projects[projectIndex].technologies
+      .map((tech) => `<li class="language">${tech}</li>`)
+      .join('');
+  }())}
       </ul>
       <div class="buttons">
         <a href="${
-          projects[projectIndex].liveSource
-        }" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
+  projects[projectIndex].liveSource
+}" class="btn">See Live <i class="fas fa-external-link-alt"></i></a>
         <a href="${
-          projects[projectIndex].sourceCode
-        }" class="btn">See Live <i class="fab fa-github"></i></a>
+  projects[projectIndex].sourceCode
+}" class="btn">See Live <i class="fab fa-github"></i></a>
       </div>
 
     </div>
@@ -147,18 +147,18 @@ function showDetails(projectIndex) {
   </div>`;
   modalDetails.innerHTML += projectsCode;
   document.body.appendChild(modalDetails);
-  document.getElementById("closeDetails").addEventListener("click", () => {
-    modalDetails.innerHTML = "";
+  document.getElementById('closeDetails').addEventListener('click', () => {
+    modalDetails.innerHTML = '';
     document.body.removeChild(modalDetails);
     blurred.forEach((section) => {
-      section.style.filter = "blur(0)";
+      section.style.filter = 'blur(0)';
     });
   });
 }
 
-const portfolio = document.getElementById("portfolio");
-const projectList = document.createElement("ul");
-projectList.className = "project-list";
+const portfolio = document.getElementById('portfolio');
+const projectList = document.createElement('ul');
+projectList.className = 'project-list';
 portfolio.appendChild(projectList);
 
 const projectsCode = projects.map(
@@ -178,64 +178,63 @@ const projectsCode = projects.map(
 
     <ul class="languages">
     ${(function usedTech() {
-      return project.technologies
-        .map((tech) => `<li class="language">${tech}</li>`)
-        .join("");
-    })()}
+    return project.technologies
+      .map((tech) => `<li class="language">${tech}</li>`)
+      .join('');
+  }())}
 
     </ul>
     <button class="btn details-btn" type="button" data-id="${
-      project.id
-    }">See Project</button>
+  project.id
+}">See Project</button>
   </div>
-</li>`
+</li>`,
 );
-projectList.innerHTML = projectsCode.join("");
+projectList.innerHTML = projectsCode.join('');
 
-const showButton = document.querySelectorAll(".details-btn");
+const showButton = document.querySelectorAll('.details-btn');
 showButton.forEach((btn) => {
-  btn.addEventListener("click", (event) => {
+  btn.addEventListener('click', (event) => {
     showDetails(event.target.dataset.id);
     blurred.forEach((section) => {
-      section.style.filter = "blur(5px)";
+      section.style.filter = 'blur(5px)';
     });
   });
 });
 
 // ------------ Form Validation ---------------------------
 const userData = JSON.stringify({
-  name: "",
-  email: "",
-  message: "",
+  name: '',
+  email: '',
+  message: '',
 });
 
-const form = document.getElementById("contact-form");
-const usernameInput = document.getElementById("full-name");
-const emailInput = document.getElementById("email-address");
-const messageText = document.getElementById("message");
-const errorMessage = document.getElementById("error-message");
-const resetBtn = document.getElementById("reset");
+const form = document.getElementById('contact-form');
+const usernameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email-address');
+const messageText = document.getElementById('message');
+const errorMessage = document.getElementById('error-message');
+const resetBtn = document.getElementById('reset');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
-    errorMessage.textContent =
-      "Please, use only lowercase letters for your e-mail!";
+    errorMessage.textContent = 'Please, use only lowercase letters for your e-mail!';
   } else {
-    localStorage.setItem("userInfo", userData);
+    localStorage.setItem('userInfo', userData);
   }
 });
 
 // -------------- Local Storage ---------------------------
 
-window.addEventListener("load", () => {
-  if (localStorage.getItem("userInfo")) {
-    const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+window.addEventListener('load', () => {
+  if (localStorage.getItem('userInfo')) {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
     usernameInput.value = userInfo.name;
     emailInput.value = userInfo.email;
     messageText.value = userInfo.message;
   } else {
-    localStorage.setItem("userInfo", userData);
+    localStorage.setItem('userInfo', userData);
   }
 });
 
@@ -253,4 +252,8 @@ form.addEventListener('input', (evt) => {
   if (evt.target.dataset.id === 'name' || evt.target.dataset.id === 'email' || evt.target.dataset.id === 'message') {
     saveData(evt.target.dataset.id, evt.target.value);
   }
+});
+
+resetBtn.addEventListener('click', () => {
+  localStorage.setItem('userInfo', userData);
 });
