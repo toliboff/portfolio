@@ -56,6 +56,38 @@ const projects = [
   },
   {
     id: 1,
+    name: 'RecipeApp',
+    companyName: 'Microverse',
+    position: 'Full Stack Dev',
+    year: 2021,
+    description:
+      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+    technologies: ['ruby', 'ruby on rails', 'css', 'heroku'],
+    image: {
+      link: './img/recipe.png',
+      alt: 'RecipeApp',
+    },
+    liveSource: 'https://infinite-garden-07728.herokuapp.com/',
+    sourceCode: 'https://github.com/toliboff/recipeApp',
+  },
+  {
+    id: 2,
+    name: 'ExpenseTracker',
+    companyName: 'Microverse',
+    position: 'Full Stack Dev',
+    year: 2021,
+    description:
+      'This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    technologies: ['ruby', 'ruby on rails', 'css', 'heroku'],
+    image: {
+      link: './img/expensetracker.png',
+      alt: 'expense tracker  - mobile web app',
+    },
+    liveSource: 'https://infinite-tor-95974.herokuapp.com/',
+    sourceCode: 'https://github.com/toliboff/expence-tracker',
+  },
+  {
+    id: 3,
     name: 'Awesome Books',
     companyName: 'Microverse',
     position: 'Front End Dev',
@@ -71,7 +103,7 @@ const projects = [
     sourceCode: 'https://github.com/toliboff/awesome-books',
   },
   {
-    id: 2,
+    id: 4,
     name: 'Todo List',
     companyName: 'Microverse',
     position: 'Front End Dev',
