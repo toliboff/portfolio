@@ -335,7 +335,7 @@ h1 {
   padding: 12px;
 }
 
-.programming-languages {
+.categories {
   display: flex;
   flex-direction: column;
 }
@@ -358,17 +358,21 @@ h1 {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.programming-language {
+.list {
   list-style: none;
   background-color: #fff;
   padding: 0;
+  display: flex;
 }
 
-.programming-language li {
-  display: flex;
+.list li {
+  display: grid;
+  justify-content: center;
+  flex-basis: 50px;
+  flex-grow: 0;
   align-items: center;
   background: #f7f7f9;
-  margin: 12px 0;
+  margin: 12px 5px;
   padding: 9px;
   border-radius: 8px;
   font-size: 15px;
@@ -376,8 +380,11 @@ h1 {
   color: #253858;
 }
 
-.programming-language img {
-  margin-right: 16px;
+.list img {
+  /* margin: 16px;
+  padding: 15px; */
+  width: 50px;
+  border-radius: 50%;
 }
 
 /** Contact Section */
