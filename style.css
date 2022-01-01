@@ -363,6 +363,7 @@ h1 {
   background-color: #fff;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .list li {
