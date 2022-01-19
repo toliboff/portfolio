@@ -40,6 +40,22 @@ menuLinks.forEach((link) => {
 const projects = [
   {
     id: 0,
+    name: 'Space Travellers',
+    companyName: 'Microverse',
+    position: 'Front End Dev',
+    year: 2021,
+    description:
+      'In this group project, we worked with the real live data from the SpaceX API. We built a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.',
+    technologies: ['reactjs', 'redux', 'css'],
+    image: {
+      link: './img/project00.png',
+      alt: 'Space travellers web app screenshot',
+    },
+    liveSource: 'https://space-travellers-app.netlify.app/',
+    sourceCode: 'https://github.com/toliboff/space-travellers',
+  },
+  {
+    id: 1,
     name: 'Conference',
     companyName: 'Microverse',
     position: 'Front End Dev',
@@ -55,7 +71,7 @@ const projects = [
     sourceCode: 'https://github.com/toliboff/Conference',
   },
   {
-    id: 1,
+    id: 2,
     name: 'RecipeApp',
     companyName: 'Microverse',
     position: 'Full Stack Dev',
@@ -71,7 +87,7 @@ const projects = [
     sourceCode: 'https://github.com/toliboff/recipeApp',
   },
   {
-    id: 2,
+    id: 3,
     name: 'ExpenseTracker',
     companyName: 'Microverse',
     position: 'Full Stack Dev',
@@ -87,7 +103,7 @@ const projects = [
     sourceCode: 'https://github.com/toliboff/expence-tracker',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Awesome Books',
     companyName: 'Microverse',
     position: 'Front End Dev',
@@ -103,7 +119,7 @@ const projects = [
     sourceCode: 'https://github.com/toliboff/awesome-books',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Todo List',
     companyName: 'Microverse',
     position: 'Front End Dev',
